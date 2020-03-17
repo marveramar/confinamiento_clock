@@ -8,6 +8,9 @@ let secConf = document.querySelector('#sec');
 let minConf = document.querySelector('#min');
 let hourConf = document.querySelector('#hour');
 
+const btn = document.querySelector('.audioBtn');
+let sound = document.querySelector('.audioMI');
+const arraySounds = document.querySelectorAll('.audio');
 
 function confinaTime() {
     const initDate = new Date(2020, 2, 15);
@@ -33,9 +36,24 @@ function setDate() {
     const minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
     minHand.style.transform = `rotate(${minutesDegrees}deg)`;
     const hours = now.getHours();
-    console.log(hours)
     const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
     hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 }
+function play(sound) {
+
+    const playAudio = sound.play()
+    console.log('funcionando play')
+    if (playAudio !== undefined) {
+        playAudio.then(_ => {
+
+        })
+            .catch(error => console.log('error', playAudio))
+    }
+}
+function randomSound() {
+    let sound = arraySounds[Math.floor(Math.random() * arraySounds.length)]
+    play(sound)
+}
+btn.addEventListener('click', randomSound)
 setInterval(setDate, 1000);
 setInterval(confinaTime, 1000);

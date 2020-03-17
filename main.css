@@ -22,9 +22,13 @@ body{
     height: 100%;
     width: 150px;
     margin: 5px;
-    margin-top: 20px;
-  
+    margin-top: 20px;  
     box-shadow:  0 0 0 4px rgba(0,0,0,0.1);
+}
+.audioBtn{
+    background-color:aquamarine;
+    font-size: 25px;
+    box-shadow: 0 0 0 3px grey;
 }
 .mainWrapper{
     margin:auto;

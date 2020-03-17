@@ -11,11 +11,14 @@
 
 <body>
     <header class="header">
-        <h1 class="title">"Confinamiento Clock"</h1>
+        <h1 class="title">"Reloj de Confinamiento "</h1>
         <p>LLevamos:</p>
-        <p class="time" id="hour"></p><span>h</span>
-        <p class="time" id="min"></p><span>m</span>
-        <p class="time" id="sec"></p><span>s</span>
+        <div>
+            <p class="time" id="hour"></p><span>h</span>
+            <p class="time" id="min"></p><span>m</span>
+            <p class="time" id="sec"></p><span>s</span>
+        </div>
+        <button type="button" class="audioBtn">🎼</button>
     </header>
 
     <main class="mainWrapper">
@@ -24,8 +27,13 @@
             <div class="hand min-hand"></div>
             <div class="hand second-hand"></div>
         </div>
+        <div class="audioWrap">
+            <audio id="one" class="audio" src="./sounds/mision-imposible-peliculas-.mp3">
+                <audio id="two" class="audio" src="./sounds/ringtones-harry-potter.mp3">
+        </div>
     </main>
-    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./main.js">
+    </script>
 </body>
 
 </html>
