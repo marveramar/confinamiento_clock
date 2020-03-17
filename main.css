@@ -30,6 +30,21 @@ body{
     font-size: 25px;
     box-shadow: 0 0 0 3px grey;
 }
+.showSongBtn{
+    background-color: aquamarine;
+    font-size: 20px;
+    box-shadow: 0 0 0 2px grey;
+    margin-left: 15px;
+
+}
+.song{
+    color:black;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba( 255,255,255,0.7);
+    margin-top: 10px;
+    text-shadow: none;
+}
 .mainWrapper{
     margin:auto;
     top:20%;
@@ -70,5 +85,7 @@ body{
 .second-hand{
 background-color: rgb(86, 241, 25);
 }
-
+.hidden{
+    display:none;
+}
 

@@ -11,6 +11,8 @@ let hourConf = document.querySelector('#hour');
 const btn = document.querySelector('.audioBtn');
 let sound = document.querySelector('.audioMI');
 const arraySounds = document.querySelectorAll('.audio');
+let song = document.querySelector('.song');
+const btnTwo = document.querySelector('.showSongBtn');
 
 function confinaTime() {
     const initDate = new Date(2020, 2, 15);
@@ -42,7 +44,6 @@ function setDate() {
 function play(sound) {
 
     const playAudio = sound.play()
-    console.log(sound.src)
     if (playAudio !== undefined) {
         playAudio.then(_ => {
 
@@ -50,10 +51,18 @@ function play(sound) {
             .catch(error => console.log('error', playAudio))
     }
 }
+let audio;
 function randomSound() {
-    let sound = arraySounds[Math.floor(Math.random() * arraySounds.length)]
-    play(sound)
+    audio = arraySounds[Math.floor(Math.random() * arraySounds.length)]
+    play(audio)
 }
+function showSong() {
+    song.classList.remove('hidden');
+    let name = audio.getAttribute("name")
+    song.innerHTML = name
+    console.log(audio, name)
+}
+btnTwo.addEventListener('click', showSong)
 btn.addEventListener('click', randomSound)
 setInterval(setDate, 1000);
 setInterval(confinaTime, 1000);
