@@ -14,4 +14,4 @@ Para verificar si estás en lo cierto, al lado hay otro botón '?' que te dirá 
 
 Espero que os guste!✨ y cualquier issue,si es una crítica constructiva,será bienvenido...que sigo aprendiendo!!🤓
 
-####Buena cuarentena!🌟
+
