@@ -9,6 +9,9 @@ He añadido como funcionalidad y entretenimiento, porque vamos a estar muchos d�
 un botón de audio,que reproduce bandas sonoras de películas de forma aleatoria.
 Si haces click en él sonará un audio de unos 30s de una banda sonora.
 Te sugiero que intentes adivinar cual es la película, son bastante fáciles!! 
-Para averificar si estás en lo cierto, al lado hay otro botón '?' que te dirá cual es la película de la bso que están escuchando.
+
+Para verificar si estás en lo cierto, al lado hay otro botón '?' que te dirá cual es la película de la bso que están escuchando.
 
 Espero que os guste!✨ y cualquier issue,si es una crítica constructiva,será bienvenido...que sigo aprendiendo!!🤓
+
+###Buena cuarentena!🌟
