@@ -42,7 +42,7 @@ function setDate() {
 function play(sound) {
 
     const playAudio = sound.play()
-    console.log('funcionando play')
+    console.log(sound.src)
     if (playAudio !== undefined) {
         playAudio.then(_ => {
 
