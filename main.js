@@ -46,6 +46,7 @@ function play(sound) {
     const playAudio = sound.play()
     if (playAudio !== undefined) {
         playAudio.then(_ => {
+            song.classList.add('hidden')
 
         })
             .catch(error => console.log('error', playAudio))
