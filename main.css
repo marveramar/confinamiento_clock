@@ -92,11 +92,15 @@ background-color: rgb(86, 241, 25);
 }
 @media (min-width: 768px) {
     .header{
+        margin-top:auto;
     font-size: 30px;
     }
     .mainWrapper{
         margin-top:auto;
         position:relative;
+    }
+    .buttons{
+        margin-top:15px;
     }
 }
 
